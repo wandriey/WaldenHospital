@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Warden_Hospital.Patient"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Warden_Hospital"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock___navn" HorizontalAlignment="Left" Margin="147,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="154" FontSize="25">
+            <Run Text="Navn"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock_CPR" HorizontalAlignment="Left" Margin="147,146,0,0" TextWrapping="Wrap" Text="CPR-nummer" VerticalAlignment="Top" Height="38" Width="154" FontSize="25"/>
+        <TextBlock x:Name="textBlock_Adresse" HorizontalAlignment="Left" Margin="147,189,0,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Height="38" Width="154" FontSize="25"/>
+        <TextBlock x:Name="textBlock_Email" HorizontalAlignment="Left" Margin="147,231.758,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="38" Width="171.037" FontSize="25" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="-0.045"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="textBlock_Tlfnummer" HorizontalAlignment="Left" Margin="147,275,0,0" TextWrapping="Wrap" Text="Telefonnummer" VerticalAlignment="Top" Height="38" Width="195" FontSize="25"/>
+        <TextBox x:Name="textBox_Navn" Margin="466,103,385,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Height="38" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="20"/>
+        <TextBox x:Name="textBox_CPR" Margin="466,146,385,0" TextWrapping="Wrap" Text="Fx 06/02/99-0482&#xD;&#xD;25/03/96-0312" VerticalAlignment="Top" Height="38" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="20"/>
+        <TextBox x:Name="textBox_Adresse" Margin="466,189,385,0" TextWrapping="Wrap" Text="Hovedvejen 172, 2600 Glostrup" VerticalAlignment="Top" Height="38" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="20"/>
+        <TextBox x:Name="textBox_Email" Margin="466,232,385,0" TextWrapping="Wrap" Text="Hej@hotmail.com" VerticalAlignment="Top" Height="38" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="20"/>
+        <TextBox x:Name="textBox_Telefonnummer" Margin="466,275,385,0" TextWrapping="Wrap" Text="22334455" VerticalAlignment="Top" Height="38" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="20"/>
+        <ToggleButton x:Name="toggleButton___Indlagt_før" Content="Indlagt før" Margin="147,318,0,344" VerticalAlignment="Stretch" Width="195" FontSize="25" d:LayoutOverrides="TopPosition, BottomPosition"/>
+        <Button x:Name="button___Opret" Content="OPRET" Margin="0,0,82,69" VerticalAlignment="Bottom" Height="60" Width="180" FontSize="30" HorizontalAlignment="Right"/>
+        <ToggleButton x:Name="toggleButton_Relatives" Content="Relative" Margin="147,0,0,270" VerticalAlignment="Bottom" Width="195" FontSize="25" Height="58"/>
+        <TextBlock x:Name="textBlock_Relatives_Navn" HorizontalAlignment="Left" Margin="147,0,0,204" TextWrapping="Wrap" Text="Relatives Navn" VerticalAlignment="Bottom" Height="38" Width="195" FontSize="25"/>
+        <TextBlock x:Name="textBlock_Relatives_Adresse" HorizontalAlignment="Left" Margin="147,0,0,161" TextWrapping="Wrap" Text="Relatives Adresse" VerticalAlignment="Bottom" Height="38" Width="255" FontSize="25"/>
+        <TextBlock x:Name="textBlock_Relatives_Telefonnummer" HorizontalAlignment="Left" Margin="147,0,0,118" TextWrapping="Wrap" Text="Relatives Telefonnummer" VerticalAlignment="Bottom" Height="38" Width="286" FontSize="25"/>
+        <TextBox x:Name="textBox_Relatives_Navn" Margin="466,0,385,204" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Bottom" Height="38" FontSize="20" d:LayoutOverrides="LeftPosition, RightPosition"/>
+        <TextBox x:Name="textBox_Relatives_Adresse" Margin="466,0,385,161" TextWrapping="Wrap" Text="Kildevej 5, 4000 Roskilde" VerticalAlignment="Bottom" Height="38" FontSize="20" d:LayoutOverrides="LeftPosition, RightPosition"/>
+        <TextBox x:Name="textBox_Relatives_Telefonnummer" Margin="466,0,385,118" TextWrapping="Wrap" Text="22334455" VerticalAlignment="Bottom" Height="38" FontSize="20" d:LayoutOverrides="LeftPosition, RightPosition"/>
+
+    </Grid>
+</Page>
